@@ -1,0 +1,86 @@
+@import "components/logo";
+.menu {
+  display: flex;
+  width: 287px;
+  justify-content: space-between;
+}
+
+.menu-item {
+  list-style: none;
+  transition: -webkit-text-decoration 1000ms ease-in;
+  transition: text-decoration 1000ms ease-in;
+  transition: text-decoration 1000ms ease-in,
+    -webkit-text-decoration 1000ms ease-in;
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  transform: scale(0);
+  transition: transform 500ms ease-out;
+}
+
+.menu-item:hover::before {
+  transform: scale(1.5);
+}
+
+.menu-link {
+  color: #212121;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: #2196f3;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.e-mail {
+  display: flex;
+}
+
+.e-mail:hover path {
+  fill: #2196f3;
+  color: #2196f3;
+}
+
+.post {
+  width: 16px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.tel {
+  display: flex;
+}
+
+.tel:hover path {
+  fill: #2196f3;
+}
+
+p {
+  color: #757575;
+}
+
+p:hover {
+  color: #2196f3;
+}
